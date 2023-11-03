@@ -1,16 +1,16 @@
-Coding challenge Botpress
+# Coding challenge Botpress
 
 Draw lines in the terminal
 
 Output
-###
+```
 -----    \                    
-\                   
-\                  
-\
-
-
-
+          \                   
+           \                  
+            \                 
+                              
+                              
+                              
       |                       
       |                       
       |    /                  
@@ -22,6 +22,7 @@ Output
       |                       
       |                       
       |                       
-      |                       
+      |        
+                     
 
-###
+```
