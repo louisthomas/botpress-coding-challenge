@@ -6,7 +6,12 @@ public class Main {
     public static void main(String[] args) {
         int[][] consoleTable = new int[TABLE_SIZE][TABLE_SIZE];
         fill(consoleTable, 0);
-        Arrays.asList(new Line(Orientation.HORIZONTAL, 0, 0, 5), new Line(Orientation.VERTICAL, 6, 7, 12), new Line(Orientation.DIAGONAL_UP, 10, 10, 2), new Line(Orientation.DIAGONAL_DOWN, 9, 0, 4)).forEach(line -> drawLine(consoleTable, line));
+        Arrays.asList(
+                new Line(0, 0, 5, Orientation.HORIZONTAL)
+                , new Line( 6, 7, 12, Orientation.VERTICAL)
+                , new Line( 10, 10, 2, Orientation.DIAGONAL_UP)
+                , new Line(9, 0, 4, Orientation.DIAGONAL_DOWN))
+                .forEach(line -> drawLine(consoleTable, line));
         printTable(consoleTable);
     }
 

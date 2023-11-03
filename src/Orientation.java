@@ -1,23 +1,12 @@
 public enum Orientation {
-    HORIZONTAL(1, "-"),
-    VERTICAL(2, "|"),
-    DIAGONAL_UP(3, "/"),
-    DIAGONAL_DOWN(4, "\\");
+    HORIZONTAL(1, "-"), VERTICAL(2, "|"), DIAGONAL_UP(3, "/"), DIAGONAL_DOWN(4, "\\");
 
-    private int numVal;
-    private String symbol;
+    private final int numVal;
+    private final String symbol;
 
     Orientation(int numVal, String symbol) {
         this.numVal = numVal;
         this.symbol = symbol;
-    }
-
-    public int getNumVal() {
-        return numVal;
-    }
-
-    public String getSymbol() {
-        return symbol;
     }
 
     public static Orientation getOrientation(int numVal) {
@@ -27,6 +16,14 @@ public enum Orientation {
             }
         }
         return null;
+    }
+
+    public int getNumVal() {
+        return numVal;
+    }
+
+    public String getSymbol() {
+        return symbol;
     }
 
 
